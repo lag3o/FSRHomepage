@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :homes
+
   resources :categories
 
   resources :links
@@ -9,6 +11,8 @@ Rails.application.routes.draw do
 
   resources :rolles
 
+
+  root 'homes#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
