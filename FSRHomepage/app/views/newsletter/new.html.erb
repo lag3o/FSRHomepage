@@ -1,0 +1,11 @@
+<%= form_for :newsletter do |f| %>
+    <p>
+      <h1>Für den Newsletter anmelden</h1>
+      <%= f.label :email, "Deine Email-Adresse: " %><br>
+      <%= f.text_field :email %>
+    </p>
+
+    <p>
+      <%= f.submit "Anmelden" %>
+    </p>
+<% end %>
